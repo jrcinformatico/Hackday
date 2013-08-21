@@ -11,4 +11,36 @@
  *= require_self
  *= require_tree .
 */
+body{
+	background: #F4F4F4 url("fondo.jpg");	
+	margin: 0;
+	padding: 0;	
+}
+.container{
+	/* Area de trabajo */
+	
+}
+.content-fluid{
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.hero-unit{
+	
+	background:rgba(0,0,0,0.6);	
+}
+
+footer{
+	background:black;
+	width: 100%;	
+	padding: 10px 0px;
+	line-height: 0.5;
+	text-align: center;
+	color: #FFA500;
+} 
 
