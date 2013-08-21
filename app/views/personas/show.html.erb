@@ -1,0 +1,17 @@
+<div class="hero-unit">
+<h1 class="text-info">Tu información es:</h1>
+<ul>
+	<li>DNI :<%= @persona.dni %></li>	
+	<li>Nombres :<%= @persona.nombres %></li>
+	<li>Apellidos :<%= @persona.apellidos%></li>
+	<li>Correo electrónico :<%= @persona.email %></li>
+	<li>Celular :<%= @persona.celular %></li>	
+	<li>Institucion :<%= @persona.institucion.nombre %></li>
+	<li>Región :<%= @persona.region.nombre %></li>
+	<li>Estudios :<%= @persona.estudio.nombre %></li>
+</ul>
+<%= link_to 'Editar', edit_persona_path(@persona) %> |
+<%= link_to 'Inicio', root_path %>
+</div>
+
+

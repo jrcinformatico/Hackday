@@ -21,5 +21,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
     inflect.irregular 'persona', 'personas'
     inflect.irregular 'region', 'regiones'
     inflect.irregular 'institucion', 'instituciones'
+    inflect.irregular 'estudio','estudios'
+    inflect.irregular 'conograma','conogramas'
 #   inflect.uncountable %w( fish sheep )
 end
