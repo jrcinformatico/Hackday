@@ -6,6 +6,7 @@ class Persona < ActiveRecord::Base
 	validates :nombres, :apellidos, :email, :estudio_id, :presence => true
 	
 	validates_uniqueness_of :dni
+	validates_uniqueness_of :email
 	validates :dni,length: { is: 8}, :presence => true
 	validates_format_of :dni, :with => /\A[0-9]{8}\Z/
 	
