@@ -11,7 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130809064909) do
+ActiveRecord::Schema.define(version: 20130817025339) do
+
+  create_table "estudios", force: true do |t|
+    t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "instituciones", force: true do |t|
+    t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "personas", force: true do |t|
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.string   "email"
+    t.string   "celular"
+    t.integer  "institucion_id"
+    t.integer  "region_id"
+    t.text     "comentario"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "estudio_id"
+    t.string   "dni"
+  end
+
+  add_index "personas", ["estudio_id"], name: "index_personas_on_estudio_id", using: :btree
+  add_index "personas", ["institucion_id"], name: "index_personas_on_institucion_id", using: :btree
+  add_index "personas", ["region_id"], name: "index_personas_on_region_id", using: :btree
+
+  create_table "regiones", force: true do |t|
+    t.string   "nombre"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "roles", force: true do |t|
     t.string   "name"

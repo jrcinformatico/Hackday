@@ -14,3 +14,14 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+#   inflect.plural /^(ox)$/i, '\1en'
+#   inflect.singular /^(ox)en/i, '\1'
+    inflect.irregular 'persona', 'personas'
+    inflect.irregular 'region', 'regiones'
+    inflect.irregular 'institucion', 'instituciones'
+    inflect.irregular 'estudio','estudios'
+    inflect.irregular 'conograma','conogramas'
+#   inflect.uncountable %w( fish sheep )
+end
