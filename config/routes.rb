@@ -1,5 +1,6 @@
 HackDay::Application.routes.draw do
   
+  get "reportes/index"
   get "conferencia/index"
   get "cronogramas/index"
   root :to => "home#index"
