@@ -25,5 +25,7 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
     inflect.irregular 'estudio','estudios'
     inflect.irregular 'conograma','conogramas'
     inflect.irregular 'conferencia','conferencias'
+    inflect.irregular 'evento','eventos'
+    inflect.irregular 'reporte','reportes'
 #   inflect.uncountable %w( fish sheep )
 end
