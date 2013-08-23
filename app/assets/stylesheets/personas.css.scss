@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .hero-unit{
-	background:rgba(0,0,0,0.6);	
-	color:#0070CC;
+	background:rgba(0,0,0,0.7);	
+	*color:#0070CC;
+	color: white;
+	font-family: "Bank Gothic", "Futura", "Arial";
+	
 }
