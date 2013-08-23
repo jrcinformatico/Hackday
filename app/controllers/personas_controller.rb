@@ -14,7 +14,7 @@ class PersonasController < ApplicationController
 	
 	if @persona.save
 		flash[:notice]="Se registró correctamente"
-		redirect_to @persona
+		redirect_to conferencia_index_path
 	else
 		render action: 'new'
 	end
