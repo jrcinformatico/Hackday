@@ -1,16 +1,57 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.portada{
+	text-align:center;
+}
 .hero-unit{
+
 	.text-info{
-	color: #FFA500;
+		color: #FFA500;
 		text-align: center;
 	}
 	h2{
 		color:#0066FF
 	}
 	p{
-		text-align:justify
+		text-align:center
+	}
+	.span3{
+		.ponente{
+			color:#FFA500;
+			text-align:left
+		}
+		.descripcion{
+			text-align:justify;
+			color: green;
+		}		
+	}
+	.row-fluid{
+		.span6{
+			text-shadow: 0 0 30px rgb(0, 200, 255);
+			font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+			text-align:left;
+			*background:rgba(128,0,128,0.1);
+			border-radius:25px;
+			*font-style: italic
+		}		
+	}
+	.span12{
+		
+		background:rgba(29,145,229,0.1);
+		*border:2px solid #008000;
+		border-radius:25px;
+		display: auto;
+		height: 100%;			
+		font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;		
+		font-size: 16px;
+		text-align: right;
+		color: rgb(255, 255, 255);
+		text-shadow: 0 0 30px rgb(71, 198, 71);
+		
+	}
+	.img{
+		text-align:center;
 	}
 }
 
