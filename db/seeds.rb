@@ -45,6 +45,10 @@ Institucion.create(nombre: "UPT")
 Institucion.create(nombre: "UAP")
 Institucion.create(nombre: "ULC")
 Institucion.create(nombre: "FPGV")
+Institucion.create(nombre: "Municipalidad")
 
 Estudio.create(nombre:"Estudiante")
 Estudio.create(nombre: "Profesional")
+
+Evento.create(nombre:"Ponencia")
+Evento.create(nombre:"Taller")
