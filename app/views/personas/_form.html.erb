@@ -5,7 +5,7 @@
     <%= f.input :apellidos, :placeholder =>'Tus apellidos completos' %>
     <%= f.input :email, :label => "Correo electrónico", :placeholder =>'Tu email es indespensable' %>
     <%= f.input :celular, :placeholder =>'Tu celular es indespensable' %>
-    <%= f.input :institucion, :placeholder =>'Edita tu institución'%>
+    <%= f.input :institucion, :placeholder =>'Institución de procedencia'%>
     <%= f.association :region, :label =>"Departamento" ,label_method: :nombre, value_method: :id, include_blank: false, :prompt => "Seleccione tu departamento" %>    
     <%= f.input :comentario, :placeholder =>'¿Qué te motivó a participar de este evento?' %>
     <%= f.association :estudio ,label_method: :nombre, value_method: :id,:prompt => "Tu grado de estudios" %>    
