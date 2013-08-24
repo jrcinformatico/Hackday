@@ -14,7 +14,7 @@ class PersonasController < ApplicationController
 	
 	if @persona.save
 		flash[:notice]="Se registró correctamente"
-		redirect_to conferencia_index_path
+		redirect_to root_path
 	else
 		render action: 'new'
 	end
@@ -38,6 +38,6 @@ class PersonasController < ApplicationController
   end
   
   def persona_params
-	params.require(:persona).permit(:dni, :nombres, :apellidos, :email, :celular, :institucion_id, :region_id, :comentario, :estudio_id)
+	params.require(:persona).permit(:dni, :nombres, :apellidos, :email, :celular, :institucion_id, :region_id, :comentario, :estudio_id,:conferencia)
   end  
 end
