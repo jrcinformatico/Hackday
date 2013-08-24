@@ -1,15 +1,14 @@
 <%= simple_form_for(@persona) do |f| %>
   <div class="form-horizontal">
 	<%= f.error_notification %>
-	<%= f.input :dni, :label =>'DNI', :placeholder =>'Tu documento de identidad' %>
     <%= f.input :nombres, :placeholder =>'Tus nombres completos' %>
     <%= f.input :apellidos, :placeholder =>'Tus apellidos completos' %>
     <%= f.input :email, :label => "Correo electrónico", :placeholder =>'Tu email es indespensable' %>
     <%= f.input :celular, :placeholder =>'Tu celular es indespensable' %>
-    <%= f.association :institucion, label_method: :nombre, value_method: :id,include_blank: false, :prompt => "Seleccione Institución" %>
+    <%= f.input :institucion, :placeholder =>'Edita tu institución'%>
     <%= f.association :region, :label =>"Departamento" ,label_method: :nombre, value_method: :id, include_blank: false, :prompt => "Seleccione tu departamento" %>    
     <%= f.input :comentario, :placeholder =>'¿Qué te motivó a participar de este evento?' %>
-    <%= f.association :estudio ,label_method: :nombre, value_method: :id,:prompt => "Tu grado de estudios" %>
+    <%= f.association :estudio ,label_method: :nombre, value_method: :id,:prompt => "Tu grado de estudios" %>    
   </div>
   <%= f.button :submit, "Aceptar", :class => 'btn btn-primary' %>
 <% end %>
