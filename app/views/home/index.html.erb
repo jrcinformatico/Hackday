@@ -1,6 +1,15 @@
 <div class="hero-unit">
-	<h1 class="portada">HACKDAY TACNA</h1>
-	<h2 class="portada">07-08 de septiembre del 2013</h2>
+	<h1 class="portada">HACK DAY TACNA</h1>
+	<h2 class="fecha">07-08 de septiembre del 2013</h2><br>
+	<p class="inscripcion">
+		El primer evento denominado Hack Day Tacna que se realizá en nuestra Ciudad, enfocado netamente a Seguridad de información
+		tiene por objetivo brindar a los participantes el conocimiento adecuado sobre Ethical 
+		Hacking y pruebas de Penetración de sistemas informáticos para aplicar mecanismos y controles de seguridad 
+		que mitiguen los riesgos identificados en instituciones.
+	</p>
+	<p class="inscripcion">
+		Los invitamos a que sean parte de los Hack-asistentes este 7 y 8 de Septiembre.
+	</p><br>
 	<div class="row-fluid">
 	<!-- <div class="span12"> -->
 		<ul class="thumbnails">
@@ -17,29 +26,29 @@
 						
 						<div class="active item">
 							<div class="resize">
-							<%= image_tag("logo.png", size:"800x800")  %>
+							<%= image_tag("Ponencias.png", size:"800x800")  %>
 							</div>
 							<div class="carousel-caption">
-								<h4>Seguridad de la información</h4>
-								<p>UN EVENTO NETAMENTE SOBRE SEGURIDAD DE INFORMACIÓN.</p>																
+								<!--<h4>Ponencias magistrales</h4> -->
+								<p>La ponencia tiene una duracion de 3 horas por día, el asistente tendrá la oportunidad de intervenir con sus preguntas.</p>																
 							</div>
 						</div>
 						<div class="item">
 							<div class="resize1">
-								<%= image_tag("d.png", size:"800x800") %>
+								<%= image_tag("Talleres.png", size:"800x800") %>
 							</div>
 							<div class="carousel-caption">
-								<!--<h4>Titulo imagen 2</h4>
-								<p>descripcion 3, Anim pariatur cliche reprehenderit</p> -->
+								<!--<h4>Titulo imagen 2</h4>-->
+								<p>Explicados detalladamente cada Item con demostraciones en vivo</p>
 							</div>				
 						</div>
 						<div class="item">
 							<div class="resize2">
-							<%= image_tag("c.jpg", size:"800x800") %>
+							<%= image_tag("Costos_Ponencias_Talleres.png", size:"800x800") %>
 							</div>
 							<div class="carousel-caption">
-								<!--<h4>Titulo imagen 3</h4>
-								<p>descripcion 3, Anim pariatur cliche reprehenderit</p> -->
+								<!--<h4>Titulo imagen 3</h4>-->
+								<p>Capacidad limitada Talleres 25 personas, recomendable reservar su asitencia</p>
 							</div>
 						</div>			
 					</div>
@@ -53,7 +62,7 @@
 	</div>
 	<div class="row-fluid">
 		<ul class="span6">
-			<h2 class="text-info">Nuestro objetivo: </h2>
+			<h2 class="text-info">Objetivos: </h2>
 			<!-- <ol> -->
 				<ol>
 					<li>Brindar a los participantes conocimientos adecuados acerca del Ethical Hacking</li>
@@ -63,22 +72,22 @@
 			<!-- </ol> -->			
 		</ul>
 		<ul class="span6">
-			<h2 class="text-info">Dirigido a:</h2>
+			<h3 class="text-info">Ámbitos y grupos de interés:</h3>
 			<ol>
-				<li>Estudiantes de Ingenieria De Sistemas, Computación, Informática y afines.</li>
+				<li>Estudiantes de Ingenieria de Sistemas, Computación, Informática y afines.</li>
 				<li>Gerentes de Tecnologías de Información</li>
 				<li>Administradores de infraestructuras tecnológicas (redes y servidores) </li>
 				<li>Desarrolladores de aplicaciones y administradores de Base de Datos.</li>
 			</ol>			
 		</ul>
 		<!--- <ul class="span4">
-			<h2 class="text-info">Lugar</h2>	
+			<h3 class="text-info">Lugar</h3>	
 			<ol>
 				<p>Auditorio de la Escuela de Industrias Alimentarias.</p>
 			</ol>
 		</ul> -->
 		<ul class="span12">
-			<h2 class="text-info">PONENTE</h2>
+			<h3 class="text-info">Ponente</h3>
 			<div class="row-fluid">
 				<div class="span3">
 					<ol class="text-center"><%= image_tag("palomino.jpg")%></ol>
@@ -88,7 +97,7 @@
 					<p class="descripcion">
 					Ingeniero de Sistemas, con una maestría culminada en Computación y Sistemas de la Universidad San Martín de Porres (USMP) en Perú y consultor de seguridad informática. Con más de 06 años de experiencia en seguridad de información trabajando para empresas del sector financiero y de seguros en Perú. 
 					Autor y escritor del blog <a charset="utf-8" href="http://www.el-palomo.com">www.el-palomo.com</a> donde comparte conocimientos de seguridad informática y de información de manera abierta y fácil para todos. 
-					<h3>EXPERIENCIA INSTRUCTIVA</h3>
+					<h3 class="subtitulo">Experiencia instructiva</h3>
 					</p>
 					<ol>						
 						<li>Empresa: KUNAK Consulting SAC - Perú</li>
@@ -96,7 +105,7 @@
 						<li>Empresa: I-SEC Information Security Inc. Perú</li>
 						<ul>Tiempo: 2011 – Actualidad</ul>												
 					</ol>
-					<h3>CERTIFICADOS INTERNACIONALES</h3>
+					<h3 class="subtitulo">Certificados Internacionales</h3>
 					<ol>
 						<li>CEHv7 (Certified Ethical Hacker)</li>
 						<li>CEHv6, (Certified Ethical Hacker)</li>
@@ -110,8 +119,8 @@
 	</div>
 	<div class="inscripcion">
 		<h2>Vacantes limitadas</h2>
-			<p>TE esperamos</p>
-			<p><%= link_to "Reservar cupón",new_persona_path, :class => 'btn btn-primary'%></p>
+			<p>Te esperamos</p>
+			<p><%= link_to "Reservar cupo",new_persona_path, :class => 'btn btn-primary'%></p>
 	</div>
 </div>
 
