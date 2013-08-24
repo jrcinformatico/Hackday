@@ -30,7 +30,7 @@ DatabaseCleaner.clean
 #	user = User.find_or_create_by_email :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 
 puts 'DEFAULT USERS'
-user = User.find_or_create_by_email :name => "Tony Salamanca Ilaquita", :email => "hackday@gmail.com", :password => "123456789", :password_confirmation => "123456789"
+user = User.find_or_create_by_email :name => "Hackday", :email => "hackday@gmail.com", :password => "123456789", :password_confirmation => "123456789"
 
 puts 'user: ' << user.name
 user.add_role :admin
