@@ -3,7 +3,8 @@ class Persona < ActiveRecord::Base
 	#belongs_to :institucion
 	belongs_to :estudio
 	
-	has_and_belongs_to_many :eventos
+	has_many :personas_eventos
+	has_many :eventos, :through => :personas_eventos
 		
 	validates :nombres, :apellidos, :email, :estudio_id, :presence => true
 	

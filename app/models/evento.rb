@@ -1,3 +1,4 @@
 class Evento < ActiveRecord::Base
-	has_and_belongs_to_many :personas, :join_table => :personas_eventos
+	has_many :personas_eventos
+	has_many :personas, :through => :personas_eventos
 end
