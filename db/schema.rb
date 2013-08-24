@@ -13,9 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20130824164916) do
 
+<<<<<<< HEAD
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+=======
+>>>>>>> 1356340a5fe5767446385135723aa1d42241b4aa
   create_table "estudios", force: true do |t|
     t.string   "nombre"
     t.datetime "created_at"
