@@ -31,6 +31,12 @@ class PersonasController < ApplicationController
         render action: 'edit'        
      end
   end
+  def confirmar
+  end
+  def destroy
+    @persona.destroy
+    redirect_to reportes_index_path
+  end
   private
   
   def set_persona
@@ -38,6 +44,6 @@ class PersonasController < ApplicationController
   end
   
   def persona_params
-	params.require(:persona).permit(:dni, :nombres, :apellidos, :email, :celular, :institucion_id, :region_id, :comentario, :estudio_id,:conferencia)
+	params.require(:persona).permit(:dni, :nombres, :apellidos, :email, :celular, :institucion, :region_id, :comentario, :estudio_id,:conferencia)
   end  
 end

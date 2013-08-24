@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20130824190251) do
     t.integer  "estudio_id"
     t.string   "dni"
     t.boolean  "estado"
-    t.integer  "institucion"
+    t.string   "institucion"
     t.text     "conferencia"
   end
 

@@ -34,6 +34,7 @@ user = User.find_or_create_by_email :name => "Hackday", :email => "hackday@gmail
 
 puts 'user: ' << user.name
 user.add_role :admin
+Role.create(name: "usuario")
 
 Region.create(nombre: "Tacna")
 Region.create(nombre: "Moquegua")

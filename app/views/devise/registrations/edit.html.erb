@@ -1,13 +1,13 @@
 <div class="hero-unit">
-<h2>Editar <%= resource_name.to_s.humanize %></h2>
+<h2>Editar</h2>
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => 'form-vertical' }) do |f| %>
   <%= f.error_notification %>
   <%= display_base_errors resource %>
   <%= f.input :name, :label => 'Nombres y apellidos completos', :autofocus => true %>
   <%= f.input :email, :label => 'Correo electrónico', :required => true %>
-  <%= f.input :password, :label => 'Contraseña', :autocomplete => "off", :hint => "Dejarlo en blanco si no quiere cambiarla", :required => false %>
+  <%= f.input :password, :label => 'Contraseña', :autocomplete => "off", :required => false %>
   <%= f.input :password_confirmation, :label => 'Confirmar contraseña', :required => false %>
-  <%= f.input :current_password, :label =>'Contraseña actual', :hint => "Necesitamos su contraseña actual para confirmar los cambios", :required => true %>
+  <%= f.input :current_password, :label =>'Contraseña actual', :required => true %>
   <%= f.button :submit, 'Actualizar', :class => 'btn-primary' %>
 <% end %>
 <h3>Cancelar mi cuenta</h3>

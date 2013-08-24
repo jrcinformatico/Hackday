@@ -18,6 +18,16 @@ class Persona < ActiveRecord::Base
 	validates_format_of :celular, :with => /\A[0-9]{9}\Z/
 	
 	validates :comentario, length: { maximum: 150}
-	validates :conferencia, length: { maximum: 50}
+	
+	validates :conferencia, :presence => true 
+	validates :conferencia, length: { maximum: 40}
+	before_validation( :on => :create) do
+		predeterminados
+	end	
+	
+	def predeterminados
+		self.institucion = 'No se indico' if self.institucion.blank?		
+		self.comentario = 'No comento' if self.comentario.blank?
+	end
 end
 
