@@ -25,7 +25,6 @@
         <td><%= persona.institucion%></td>
         <td><%= persona.conferencia %></td>
         <td><%= persona.estudio.nombre %></td>
-        <td><%= link_to 'Mostrar', persona %></td>
         <td><%= link_to 'Editar', edit_persona_path(persona) %></td>
         <td><%= link_to 'Eliminar', persona, method: :delete, data: { confirm: 'Está seguro?' } %></td>
       </tr>
