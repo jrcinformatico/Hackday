@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
   # :registerable,	sirve para crear nuevos usuarios
-  devise :database_authenticatable,:registerable,
+  devise :database_authenticatable,
          :rememberable, :trackable, :validatable,:timeoutable
-  #validates_presence_of :name
+  validates_presence_of :name
 end
