@@ -1,6 +1,8 @@
 <%= link_to "Hackday", root_path, :class => 'brand' %>
 <ul class="nav">
-  
+  <li><%=link_to 'Conferencias',conferencias_index_path %></li>
+  <li><%=link_to 'Ponencias',conferencias_ponencias_path %></li>
+  <li><%=link_to 'Talleres',conferencias_talleres_path %></li>
   <li><%=link_to 'Registrame',new_persona_path %></li>
   <%if user_signed_in?%>
   <li><%=link_to 'Asistentes',reportes_index_path %></li>
