@@ -1,0 +1,54 @@
+// Place all the styles related to the conferencia controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.span9{
+	text-align: justify
+}
+.inscripcion{
+	text-align:center;
+	color:#FFA500;
+	text-shadow: 0 0 30px rgb(71, 198, 71);
+}
+.hero-unit{
+	.row-fluid{
+		.span8{
+			.logo{
+				
+				background: red;
+				
+				 margin: .2em 1em 1em 0;
+				
+				*display: block;
+				*max-width: 100%;
+				*margin-right: auto;
+				*margin-left: auto;
+			}
+			.lugar{
+				background: red;
+			}
+		}
+		.span12{
+			background:rgba(29,145,229,0.1);
+			text-align:left;
+		}
+		.span6{
+			*background:rgba(0,0,0,0.8);
+			color: #1E90FF;	
+			ul{
+				padding-left: 0; /*Limpieza de márgenes (se puede cambiar)*/
+				margin-left: 36px; /*Indentado de la lista (se puede cambiar)*/
+				list-style-type: none;
+				li{
+					list-style-image: url(f.png);						
+					padding-left: 1px;
+					*border:2px solid #008000;					
+				}				 
+			}		
+		}
+		.subtexto{
+			text-align:left;
+			color: white;				
+		}
+		
+	}		
+}
