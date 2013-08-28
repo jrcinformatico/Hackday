@@ -1,6 +1,6 @@
 HackDay::Application.routes.draw do
   
-  get "conferencias/index"
+  #get "conferencias/index"
   get "conferencias/ponencias"
   get "conferencias/talleres"
   get "conferencias/costos"
