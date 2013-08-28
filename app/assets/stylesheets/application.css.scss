@@ -12,9 +12,7 @@
  *= require_tree .
 */
 body{
-	background: #000000 url("fondo.jpg");		
-	margin: 0;
-	padding: 0;	
+ *background: url(fondo.jpg);
 }
 .container{
 	/* Area de trabajo */
@@ -35,7 +33,7 @@ body{
 		
 }
 footer{
-	background:black;
+	*background:#FFA500;
 	width: 100%;	
 	padding: 10px 0px;
 	line-height: 0.5;
