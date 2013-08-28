@@ -30,16 +30,25 @@
       </div> <!--! end of .container -->
     </div> <!--! end of #main -->
     <footer>
-		<div class=class="wrapper">		
-				<h5>INFORMES E INSCRIPCIONES:</h5>
-				<p>DIRECCIÓN DE LA ESCUELA ACADÉMICO PROFESIONAL DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS - FACULTAD DE INGENIERÍA</p>
-				<p>CEL: 952802448, 952949785, 952500964</p>
-				<p>Email: hacktacna@gmail.com, ciistacna.unjbg@gmail.com</p>
-				<p><a charset="utf-8" href="http://www.ciistacna.com">Página Web: www.ciistacna.com</a></p>
-				<p><a charset="utf-8" href="http://www.facebook.com/ciistacna">Facebook: www.facebook.com/ciistacna</a></p>				
-				<p>Universidad Jorge Basadre Grohmann</p>
-				<p>Tacna-Perú</p>
-		</div>			  
+	<div class="row-fluid">
+		<div class="span2"><%= image_tag("unjbg.png")%></div>
+		<div class="span8">
+			<div class=class="wrapper">		
+					<h4>INFORMES E INSCRIPCIONES:</h4>
+					<p>ESCUELA ACADÉMICO PROFESIONAL DE INGENIERÍA EN INFORMÁTICA Y SISTEMAS</p>
+					<p>FACULTAD DE INGENIERÍA</p>
+					<p>CEL: 952802448, 952949785, 952500964</p>
+					<p>Email: hacktacna@gmail.com, ciistacna.unjbg@gmail.com</p>
+					<p>Te puede interesar también:</p>
+					<p><%= link_to "Página web ciis: www.ciistacna.com","http://www.ciistacna.com" %></p>
+					<p><%= link_to "Facebook ciis: http://www.facebook.com/ciistacna","Facebook: www.facebook.com/ciistacna" %></p>
+					</br>							
+					<p>Universidad Jorge Basadre Grohmann</p>
+					<p>Tacna-Perú</p>
+			</div>
+		</div>	
+		<div class="span2"><%= image_tag("ciis.png")%></div>
+	</div>			  
     </footer>
   </body>
 </html>
