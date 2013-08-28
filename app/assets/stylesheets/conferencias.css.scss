@@ -43,12 +43,24 @@
 					padding-left: 1px;
 					*border:2px solid #008000;					
 				}				 
+			}
+			.lista{
+				text-align:left;
 			}		
 		}
 		.subtexto{
 			text-align:left;
 			color: white;				
-		}
-		
-	}		
+		}		
+	}
+	.nota{
+		text-align:center;
+		border:2px solid #008000;
+		border-radius:25px;	
+	}
+	.thumbnails{
+		box-shadow: 2px 2px 5px #999;
+		-webkit-box-shadow: 2px 2px 5px #999;
+		-moz-box-shadow: 2px 2px 5px #999;
+	}			
 }
