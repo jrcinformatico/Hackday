@@ -6,5 +6,5 @@ class User < ActiveRecord::Base
   # :registerable,	sirve para crear nuevos usuarios
   devise :database_authenticatable,:registerable,
          :rememberable, :trackable, :validatable,:timeoutable
-  validates_presence_of :name
+  #validates_presence_of :name
 end
