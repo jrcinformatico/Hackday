@@ -12,7 +12,7 @@
 	</p><br>
 	<div class="row-fluid">
 	<!-- <div class="span12"> -->
-		<ul class="thumbnails">
+		<ul class="text-center">
 				<li>
 				<!---carusel inico .......................... -->
 				<div id="myCarousel" class="carousel slide">
@@ -91,7 +91,7 @@
 			<h2 class="text-info">PONENTE</h2>
 			<div class="row-fluid">
 				<div class="span3">
-					<ol class="text-center"><%= image_tag("palomino.jpg")%></ol>
+					<ol class="text-center thumbnails"><%= image_tag("palomino.jpg")%></ol>
 					<ol class="ponente"><p>Omar Martín Palomino Huamaní</p></ol>
 				</div>
 				<div class="span9">
@@ -118,9 +118,14 @@
 			</div>
 		</ul>
 	</div>
+	<br>
 	<%= render "conferencias/ponencia"%>
+	<br>
 	<%= render "conferencias/taller"%>	
-	<%= render "informe"%>
+	<br>	
+	<%= render "conferencias/costo"%>
+	<br>
+	<%= render "informe"%>	
 </div>
 
 
