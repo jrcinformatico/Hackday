@@ -22,7 +22,7 @@
         <td><%= persona.nombres %></td>
         <td><%= persona.apellidos %></td>
         <td><%= persona.celular %></td>
-        <td><%= persona.institucion%></td>
+        <td><%= persona.institucion unless persona.institucion.blank?%></td>
         <td><%= persona.conferencia %></td>
         <td><%= persona.estudio.nombre %></td>        
       </tr>
