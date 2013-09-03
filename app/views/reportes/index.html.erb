@@ -1,9 +1,10 @@
 <div class="hero-unit">
 <h1 class="text-info">Asistentes al HackDay Tacna</h1>
-<h4>Total de personas inscritas: <%= @totalpersona%></h4>
+<h4>Total de personas inscritas: <%= @totalpersona-1%></h4>
 <table class="table table-condensed table-hover">
   <thead>
     <tr>
+      <th>N°</th>
       <th>Nombres</th>
       <th>Apellidos</th>
       <th>Celular</th>
@@ -17,8 +18,10 @@
   </thead>
 
   <tbody>
+	<% i=0 %>
     <% @personas.each do |persona| %>
       <tr>
+        <td><%= i+=1%></td>
         <td><%= persona.nombres %></td>
         <td><%= persona.apellidos %></td>
         <td><%= persona.celular %></td>
