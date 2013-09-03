@@ -4,7 +4,8 @@ HackDay::Application.routes.draw do
   get "conferencias/ponencias"
   get "conferencias/talleres"
   get "conferencias/costos"
-  get "reportes/index"  
+  get "reportes/index"
+  get "reportes/correos"  
   get "cronogramas/index"
   root :to => "home#index"
   devise_for :users, :controllers => {:registrations => "registrations"}
