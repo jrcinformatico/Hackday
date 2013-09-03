@@ -1,0 +1,29 @@
+<div class="hero-unit">
+<h1 class="text-info">Contactos con los asistentes</h1>
+<table class="table table-condensed table-hover">
+  <thead>
+    <tr>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Celular</th>
+      <th>Email</th>      
+      <th>Región</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personas.each do |persona| %>
+      <tr>
+        <td><%= persona.nombres %></td>
+        <td><%= persona.apellidos %></td>
+        <td><%= persona.celular %></td>
+        <td><%= persona.email %></td>
+        <td><%= persona.region.nombre unless persona.region.blank? %></td>        
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
