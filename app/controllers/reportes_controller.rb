@@ -5,4 +5,8 @@ class ReportesController < ApplicationController
 	@personas=Persona.all
 	@totalpersona=Persona.count
   end
+  
+  def correos
+	@personas=Persona.all.order("region_id")
+  end
 end
